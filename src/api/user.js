@@ -4,7 +4,7 @@ export function login(data) {
   return request({
     url: '/authc/login',
     method: 'post',
-    data
+    params: data
   })
 }
 
@@ -18,7 +18,7 @@ export function getInfo(token) {
 
 export function logout() {
   return request({
-    url: '/user/logout',
+    url: '/logout',
     method: 'post'
   })
 }
